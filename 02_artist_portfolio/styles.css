@@ -1,3 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Cormorant", serif;
+}
+
+h1,
+.links,
+.links li {
+  display: inline-block;
+}
+
+.navbar {
+  margin: 32px;
+}
+
+h1 {
+  font-weight: 300;
+  margin-right: 32px;
+}
+
+.links a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 8px;
+}
+
+a.active {
+  border-bottom: 1px solid black;
 }
