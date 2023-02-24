@@ -51,6 +51,11 @@ h6 {
   letter-spacing: 0.25px;
 }
 
+code {
+  color: var(--main-orange-color);
+  font-weight: bold;
+}
+
 .content {
   max-width: 900px;
   margin: 0 auto;
@@ -80,10 +85,6 @@ h6 {
   font-size: 18px;
   letter-spacing: 0;
   margin: 40px 0;
-}
-
-.headline span {
-  color: var(--main-orange-color);
 }
 
 .quote {
