@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-coral: #f08e80;
+}
+
+body {
+  font-family: "Forum", serif;
+}
+
+.hero {
+  background-color: var(--main-coral);
+  height: 90vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 24px 32px;
+}
+
+.navbar .links a {
+  text-decoration: none;
+  color: inherit;
+  margin-right: 16px;
+  font-size: 1.2rem;
+}
+
+.navbar p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar .contact {
+  background: white;
+  color: var(--main-coral);
+  padding: 16px 24px;
+  text-decoration: none;
+}
+
+.navbar .contact:hover {
+  opacity: 0.8;
+}
