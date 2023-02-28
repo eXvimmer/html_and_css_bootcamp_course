@@ -76,3 +76,38 @@ h1 {
   top: 98px;
   background-color: rgb(231, 231, 231);
 }
+
+.toggle-wrapper {
+  display: flex;
+}
+
+.toggle-wrapper img {
+  height: 40px;
+  margin: 0 16px;
+}
+
+.toggle {
+  box-sizing: border-box;
+  background-color: var(--purple);
+  height: 32px;
+  width: 140px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4px 0 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.toggle span:first-of-type {
+  color: white;
+}
+
+.toggle span:last-of-type {
+  background-color: white;
+  color: var(--purple);
+  padding: 4px 16px;
+  border-radius: 20px;
+}
