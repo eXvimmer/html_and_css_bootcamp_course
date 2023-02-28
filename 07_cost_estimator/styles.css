@@ -1,3 +1,6 @@
+:root {
+  --purple: rgb(83, 49, 156);
+}
 body {
   background-color: rgba(233, 223, 255);
   font-family: "Open Sans", sans-serif;
@@ -10,7 +13,7 @@ body {
 }
 
 h1 {
-  color: rgb(83, 49, 156);
+  color: var(--purple);
   text-transform: capitalize;
 }
 
@@ -18,4 +21,29 @@ h1 {
   background-color: white;
   width: 100%;
   max-width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.tabs {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(200, 175, 2525);
+}
+
+.tabs a {
+  text-decoration: none;
+  color: inherit;
+  /* NOTE: padding was 16px (because Colt used p), but I changed it */
+  padding: 32px;
+}
+
+.tabs a:hover,
+.tabs a.active {
+  color: var(--purple);
 }
