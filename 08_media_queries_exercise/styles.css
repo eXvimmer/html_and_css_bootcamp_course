@@ -1,0 +1,17 @@
+h1 {
+  font-size: 3rem;
+}
+
+/* applies if screen is at minimum 800px wide (i.e wider than 800px) */
+@media only screen and (min-width: 800px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+/* applies if the screen is at minimum 1000px wide (wider than 1000px) */
+@media only screen and (min-width: 1000px) {
+  h1 {
+    font-size: 7rem;
+  }
+}
