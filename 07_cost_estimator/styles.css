@@ -1,5 +1,6 @@
 :root {
   --purple: rgb(83, 49, 156);
+  --text-color: rgb(44, 44, 44);
 }
 
 body {
@@ -10,11 +11,12 @@ body {
   justify-content: center;
   align-items: center;
   padding: 32px;
-  color: rgb(44, 44, 44);
+  color: var(--text-color);
 }
 
 h1 {
   color: var(--purple);
+  text-transform: capitalize;
 }
 
 .container {
@@ -110,4 +112,32 @@ h1 {
   color: var(--purple);
   padding: 4px 16px;
   border-radius: 20px;
+}
+
+.sessions-card {
+  background-color: rgb(250, 247, 255);
+  text-align: center;
+  padding: 32px;
+  width: 50%;
+  text-transform: uppercase;
+  margin: 16px 0;
+  border-radius: 10px;
+}
+
+.sessions-card p {
+  color: var(--text-color);
+  font-size: 12px;
+  font-weight: bold;
+  margin: 16px 0 0 0;
+}
+
+.sessions-card .number {
+  color: var(--purple);
+  font-size: 54px;
+  margin: 0;
+}
+
+.description {
+  line-height: 32px;
+  margin: 16px 0 32px 0;
 }
