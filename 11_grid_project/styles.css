@@ -3,8 +3,11 @@ body {
 }
 
 .project-grid {
+  width: 100%;
+  max-width: 90%;
   display: grid;
-  gap: 1rem;
+  margin: 0 auto;
+  gap: 16px;
   grid-template-areas:
     "eth eth alphabet"
     "eth eth traveler"
@@ -85,4 +88,32 @@ body {
   opacity: 1;
   cursor: pointer;
   /* backdrop-filter: blur(10px); */
+}
+
+@media only screen and (max-width: 1100px) {
+  .project-grid {
+    max-width: 100%;
+    grid-template-areas:
+      "eth eth"
+      "alphabet traveler"
+      "cube astro"
+      "insta insta"
+      "cup foam"
+      "dimensional dimensional";
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .project-grid {
+    gap: 8px;
+    grid-template-areas:
+      "eth eth"
+      "alphabet alphabet"
+      "traveler traveler"
+      "cube astro"
+      "insta insta"
+      "cup cup"
+      "foam foam"
+      "dimensional dimensional";
+  }
 }
