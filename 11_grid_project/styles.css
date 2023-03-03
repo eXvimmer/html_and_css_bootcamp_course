@@ -2,14 +2,62 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.project-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "eth eth alphabet"
+    "eth eth traveler"
+    "cube astro traveler"
+    "cup insta insta"
+    "cup insta insta"
+    "foam foam dimensional"
+    "foam foam dimensional";
+}
+
+#eth {
+  grid-area: eth;
+}
+
+#alphabet {
+  grid-area: alphabet;
+}
+
+#astro {
+  grid-area: astro;
+}
+
+#traveler {
+  grid-area: traveler;
+}
+
+#cube {
+  grid-area: cube;
+}
+
+#cup {
+  grid-area: cup;
+}
+
+#insta {
+  grid-area: insta;
+}
+
+#foam {
+  grid-area: foam;
+}
+
+#dimensional {
+  grid-area: dimensional;
+}
+
 .project {
-  width: 900px;
   position: relative;
 }
 
 .project img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -36,5 +84,5 @@ body {
 .project .overlay:hover {
   opacity: 1;
   cursor: pointer;
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
 }
