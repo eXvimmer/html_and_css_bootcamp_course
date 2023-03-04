@@ -14,6 +14,27 @@ body {
   padding: 64px 0;
 }
 
+.navbar .hamburger {
+  display: none;
+}
+
+.navbar .hamburger:hover {
+  cursor: pointer;
+}
+
+.navbar .bar {
+  height: 50px;
+  width: 50px;
+  margin: 3px;
+  border-radius: 10px;
+}
+
+.navbar .bar {
+  background-color: black;
+  height: 4px;
+  width: 36px;
+}
+
 .navbar .left {
   font-size: 32px;
   font-weight: bold;
@@ -151,6 +172,31 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  .project-grid {
+    margin-top: 100px;
+  }
+  .navbar {
+    box-sizing: border-box;
+    padding: 16px 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: white;
+    width: 100%;
+  }
+
+  .navbar .right {
+    display: none;
+  }
+
+  .navbar .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .project-grid {
     gap: 8px;
     grid-template-areas:
