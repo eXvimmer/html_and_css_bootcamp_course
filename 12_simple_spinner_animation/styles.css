@@ -1,0 +1,27 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.spinner {
+  width: 100px;
+  height: 100px;
+  border: 12px solid #6e6363;
+  border-top-color: #98a9d7;
+  border-bottom-color: #98a9d7;
+  border-radius: 50%;
+  animation: spin 1.5s infinite cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
