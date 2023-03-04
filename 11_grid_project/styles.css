@@ -22,14 +22,11 @@ body {
   cursor: pointer;
 }
 
-.navbar .bar {
-  height: 50px;
-  width: 50px;
+.bar1,
+.bar2,
+.bar3 {
   margin: 3px;
   border-radius: 10px;
-}
-
-.navbar .bar {
   background-color: black;
   height: 4px;
   width: 36px;
@@ -218,6 +215,16 @@ body {
     padding: 32px;
     font-size: 14px;
   }
+}
+
+.animateBar1 {
+  animation: 1s flipbar1 forwards;
+}
+.animateBar2 {
+  animation: 1s fadebar2 forwards;
+}
+.animateBar3 {
+  animation: 1s flipbar3 forwards;
 }
 
 @keyframes flipbar1 {
